@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
     <title>Are you sassy?</title>
@@ -9,29 +9,677 @@
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="author" href="https://plus.google.com/106783201431526527457/posts">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href='http://fonts.googleapis.com/css?family=Abel|Wire+One|Mr+Dafoe' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="assets/favicon.ico">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-   
-   
+    <script src="js/modernizr.custom.js"></script>
 
-<body>
-<h1>Are you sassy?</h1>
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-32740256-1']);
-    _gaq.push(['_trackPageview']);
 
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
 
-</body>
+
+    <body>
+        <div class="container">
+            <header id="header" class="codrops-header">
+                <span class="message">This mobile version does not have the slideshow switch</span>
+                <button class="slider-switch">Switch view</button>
+            </header>
+            <div id="overlay" class="overlay">
+                <div class="info">
+                    <h2>Used interactions</h2>
+                    <span class="info-drag">Drag Sliders</span>
+                    <span class="info-keys">Use Arrows</span>
+                    <span class="info-switch">Switch view</span>
+                    <button>Got it!</button>
+                </div>
+            </div>
+            <div id="slideshow" class="dragslider">
+                <section class="img-dragger img-dragger-large dragdealer">
+                    <div class="handle">
+                        <div class="slide" data-content="content-1">
+                            <div class="img-wrap slide1">
+                            </div>
+                            <h2 class="title xl">Are you <br> sassy?<br> <span>You <span class="color">should</span> </span></h2>
+                            <button class="content-switch">Read more</button>
+                        </div>
+                        <div class="slide" data-content="content-2">
+                            <div class="img-wrap slide2">
+                            </div>
+                            <h2>Release 3.1 <span>April 2011</span></h2>
+                            <button class="content-switch">Read more</button>
+                        </div>
+                        <div class="slide" data-content="content-3">
+                            <div class="img-wrap slide3">
+                            </div>
+                            <h2>Release 3.2 <span>August 2012</span></h2>
+                            <button class="content-switch">Read more</button>
+                        </div>
+                        <div class="slide" data-content="content-4">
+                            <div class="img-wrap slide4">
+                            </div>
+                            <h2>Release 3.3 <span>March 2014</span></h2>
+                            <button class="content-switch">Read more</button>
+                        </div>
+                        <div class="slide" data-content="content-5">
+                            <div class="img-wrap slide5">
+                            </div>
+                            <h2>Release 3.4 <span>August 2014</span></h2>
+                            <button class="content-switch">Read more</button>
+                        </div>
+                        <div class="slide" data-content="content-6">
+                            <div class="img-wrap slide6">
+                            </div>
+                            <h2>Postprocess<span>Changing the working process</span></h2>
+                            <button class="content-switch">Read more</button>
+                        </div>
+                        <div class="slide" data-content="content-7">
+                            <div class="img-wrap slide7">
+                            </div>
+                            <h2>Sass Ecosystem<span>The strength of the community</span></h2>
+                            <button class="content-switch">Read more</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- /img-dragger-->
+                <!-- Content section -->
+                <section class="pages">
+                    <div class="content" data-content="content-1">
+                        <h2>Are you sassy? <span>You should</span></h2>
+                      <h3 class="tac">I am</h3>
+                      <p class="tac">Naiara Abaroa. UI designer/developer</p>
+                      <img  class="circle" src="https://pbs.twimg.com/profile_images/528258987637362689/IoI3ZdKf.jpeg" alt="">
+                      <p class="tac"><a href="https://twitter.com/nabaroa" target="_blank">@nabaroa</a></p>
+                     <h2 class="tac">And now a talk to convince you why <em class="highlight">you have to</em> process your CSS</h2> 
+                     </div>
+
+                    <div class="content" data-content="content-2">
+                        <h2>Release 3.1 <span></span></h2>
+                        <h3>Lists</h3>
+                        <h4>You can use spaces or commas as separator</h4>
+
+                        <pre class="language-scss">
+<code class="language-scss">
+    $list-space: "item-1" "item-2" "item-3";
+    $list-comma: "item-1", "item-2", "item-3"; 
+    </code>
+</pre>
+
+
+                        <h4>You can nest lists </h4>
+                        <p>As for JavaScript or any other language, there is no limit regarding the level of depth you can have with nested lists. Just go as deep as you need to.</p>
+                        <pre class="language-scss">
+<code class="language-scss">
+/* Nested lists with braces and same separator */
+    $list: ( 
+        ("item-1.1", "item-1.2", "item-1.3"), 
+            ("item-2.1", "item-2.2", "item-2.3"),
+            ("item-3.1", "item-3.2", "item-3.3")
+           );
+           
+/* Nested lists without braces using different separators to distinguish levels */
+    $list: "item-1.1" "item-1.2" "item-1.3", 
+           "item-2.1" "item-2.2" "item-2.3",
+           "item-3.1" "item-3.2" "item-3.3";
+    </code>
+</pre>
+
+                        <h4>Indexes start at 1, not 0</h4>
+                        <pre class="language-scss">
+<code class="language-scss">
+nth($list, 0) -> throws error
+nth($list, 1) -> "item-1"
+</code>
+</pre>
+
+                        <h4>Every value in Sass is treated as a list</h4>
+                        <p>Strings, numbers, boolean, whatever you can put in a variable. This means you’re fine to use some list functions even on things that don’t look like one.</p>
+                        <pre class="language-scss">
+<code class="language-scss">
+$variable: "Sass is awesome";
+length($variable) -> 1
+</code></pre>
+
+                        <p class="text small">Beware! If you remove the quotes around this string, it will be parsed as a 3 items long list (1: Sass; 2: is; 3: awesome). I recommand you quotes your strings to avoid some unpleasant surprises.</p>
+                        <h4>Sass list functions</h4>
+                        <p>Some handy functions to work with lists: nth, append, join, and length</p>
+                        <pre class="language-scss">
+<code class="language-scss">
+    nth(1px 2px 10px, 2) ->  2px
+    append(1px 2px, 5px) -> (1px 2px 5px)
+    length(5px 10px) -> 2
+</code></pre>
+
+                        <h4>There is also a new @each directive to iterate over lists</h4>
+                        <pre class="language-scss">
+<code class="language-scss">
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+</code>
+</pre>
+                        <pre class="language-css">
+<code class="language-css">
+/*output CSS*/
+.puma-icon {
+  background-image: url('/images/puma.png'); }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png'); }
+.egret-icon {
+  background-image: url('/images/egret.png'); }
+.salamander-icon {
+  background-image: url('/images/salamander.png'); }
+  </code>
+  </pre>
+                        <h3>Source</h3>
+                        <ul>
+                            <li>
+                                <a href="http://hugogiraudel.com/2013/07/15/understanding-sass-lists" target="_blank">http://hugogiraudel.com/2013/07/15/understanding-sass-lists</a>
+                            </li>
+                            <li><a href="http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/" target="_blank">http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/</a>
+                            </li>
+                            <li>
+                                <a href="http://thechangelog.com/sass-sass-makes-css-fun-again/" target="_blank">http://thechangelog.com/sass-sass-makes-css-fun-again/</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#lists" target="_blank">https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#lists</a>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="content" data-content="content-3">
+                        <h2>Release 3.2 <span></span></h2>
+
+                        <h3>@content</h3>
+                        <p>A mixin <span class="highlight">include can now accept a block of content</span>. The style block will be passed to the mixin and can be placed at the point @content is used.</p>
+
+                        <pre class="language-scss">
+<code class="language-scss">
+@mixin iphone {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@include iphone {
+  body { color: red }
+}
+</code></pre>
+                        <p>Produces</p>
+                        <pre class="language-scss"> 
+<code class="language-scss">
+@media only screen and (max-width: 480px) {
+  body { color: red }
+}
+</code></pre>
+                        <h3>Placeholder Selectors: %foo</h3>
+                        <p>Sass supports a new, special type of selector called a "placeholder selector". These look like class and id selectors, except the # or . is replaced by %. They're meant to be used with the @extend directive, when you want to write styles to be extended but you don't want the base styles to appear in the CSS.</p>
+                        <pre class="language-scss"> 
+<code class="language-scss">
+/*This ruleset won't be rendered on its own.*/
+#context a%extreme {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.notice { @extend %extreme; }
+
+/*Is compiled to:*/
+#context a.notice {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+</code></pre>
+                        <h3>Variable Arguments</h3>
+                        <p>When defining a mixin or function, you can add ... after the final argument to have it accept an unbounded number of arguments and package them into a list.</p>
+                        <pre class="language-scss"> 
+<code class="language-scss">
+/* This is the same as "@include spacing(1, 2, 3);"*/
+$values: 1, 2, 3;
+@include spacing($values...);
+</code></pre>
+                        <h3>Directive Interpolation</h3>
+                        <p>#{} interpolation is now allowed in all plain CSS directives (such as @font-face, @keyframes, and of course @media). In addition, @media gets some special treatment. In addition to allowing #{} interpolation, expressions may be used directly in media feature queries. This means that you can write:</p>
+
+                       
+                        <pre class="language-scss"> 
+<code class="language-scss">
+$media: screen; 
+$feature: -webkit-min-device-pixel-ratio; 
+$value: 1.5;
+
+@media #{$media} and ($feature: $value) { 
+  ...
+}
+</code></pre>
+                        <h3>Source</h3>
+                        <ul>
+                            <li><a href="https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#320-10-august-2012" target="_blank">https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#320-10-august-2012</a>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="content" data-content="content-4">
+                        <h2>Release 3.3 <span>March 2014</span></h2>
+                        <h3>SassScript Maps</h3>
+                        <p>SassScript has a new data type: maps.</p>
+                        <p> These are <span class="highlight">associations from SassScript values </span>(often strings, but potentially any value)<span class="highlight"> to other SassScript values</span>. They look like this:</p>
+                        <pre class="language-scss"> 
+<code class="language-scss">
+$map: (key1: value1, key2: value2, key3: value3);
+                        </code></pre>
+                        <p class="text small">Unlike lists, maps must always be surrounded by parentheses. () is now an empty map in addition to an empty list.</p>
+                        <p>Maps will allow users to <span class="highlight">collect values into named groups and access those groups dynamically</span>.</p>
+                        <p> For example, you could use them to manage themes for your stylesheet:</p>
+                        <pre class="language-scss"> 
+<code class="language-scss">
+$themes: (
+  mist: (
+    header: #DCFAC0,
+    text:   #00968B,
+    border: #85C79C
+  ),
+  spring: (
+    header: #F4FAC7,
+    text:   #C2454E,
+    border: #FFB158
+  ),
+  // ...
+);
+
+@mixin themed-header($theme-name) {
+  h1 {
+    color: map-get(map-get($themes, $theme-name), header);
+  }
+}
+</code></pre>
+
+                        <h4>Map functions</h4>
+                        <h4>  <span class="highlight">map-get($map, $key)</span> </h4>
+                        <p> Returns the value in the map associated with the given key. If no value is found, it returns null.
+
+                            <h4><pan class="highlight">map-merge($map1, $map2)</span> </h4>
+                            <p>Merges two maps together into a new map. If there are any conflicts, the second map takes precedence, making this a good way to modify values in a map as well.</p>
+
+                            <h4><pan class="highlight">map-remove($map, $key)</span> </h4>
+                            <p>Returns a new map with a key removed.</p>
+
+                            <h4><span class="highlight">map-keys($map)</span> </h4>
+                            <p>Returns all the keys in a map as a comma-separated list.</p>
+
+                            <h4><pan class="highlight">map-values($map)</span> </h4>
+                            <p>Returns all the values in a map as a comma-separated list.</p>
+
+                            <h4><span class="highlight">map-has-key($map, $key) </span></h4>
+                            <p>Returns whether or not a map contains a pair with the given key.</p>
+
+
+                            <p>Maps can also be used with <span class="highlight">@each</span>, using the new multiple assignment feature:</p>
+                            <pre class="language-scss"> 
+<code class="language-scss">
+$primary-nav: (
+  padding-top: .2em,
+  margin-top: .2em,
+  line-height: 1.3,
+);
+
+
+@mixin print-styles($map){
+ @each $property, $value in $map {
+   #{$property}: $value;
+ }
+}
+
+.primary-nav {
+ @include print-styles($primary-nav);
+}
+
+/* Outputted CSS */
+.primary-nav {
+  padding-top: .2em;
+  margin-top: .2em;
+  line-height: 1.3;
+}
+</code></pre>
+                            <!--                             <pre class="language-scss"> 
+<code class="language-scss">
+@each $header, $size in (h1: 2em, h2: 1.5em, h3: 1.2em) {
+  #{$header} {
+    font-size: $size;
+  }
+}
+
+/*Produces*/
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+</code></pre> -->
+                            <h2><a href="http://codepen.io/nabaroa/pen/PwNYJL " target="_blank">Example in Codepen <br>   <br><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="" width="300" height="300"></a></h2>
+
+
+
+
+                            <h3>Source Maps</h3>
+                            <p>Sass now has the ability to generate standard JSON source maps of a format that is supported in most major browsers. These source maps <span class="highlight">tell the browser how to find the Sass styles</span> that caused each CSS style to be generated.
+                                <figure>
+                                    <img src="https://developer.chrome.com/devtools/docs/css-preprocessors-files/sass-debugging.png" alt="">
+                                    <figcaption> Image by developer.chrome.com</figcaption>
+                                </figure> <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">https://developer.chrome.com/devtools/docs/css-preprocessors</a>
+                            </p>
+
+                            <h3>@at-root</h3>
+                            <p>Sass 3.3 adds the @at-root directive, which is a way to tell Sass to <span class="highlight">put a collection of rules at the top-level root of the document</span>. The easiest way to use it is with a selector:</p>
+                            <pre class="language-scss"> 
+<code class="language-scss">
+.badge {
+  @at-root {
+    .info { ... }
+    .header { ... }
+  }
+}
+
+/* Also produces */
+
+.info { ... }
+.header { ... }
+</code></pre>
+
+                            <h4>@at-root (without: ...) and @at-root (with: ...)</h4>
+                            <p>By default, @at-root just excludes selectors. However, it's also possible to use @at-root to move outside of nested directives such as @media as well. For example:</p>
+                            <pre class="language-scss"> 
+<code class="language-scss">
+@media print {
+  .page {
+    width: 8in;
+    @at-root (without: media) {
+      color: red;
+    }
+  }
+}
+
+/* Produces */
+
+@media print {
+  .page {
+    width: 8in;
+  }
+}
+.page {
+  color: red;
+}
+</code></pre>
+                            <h3>Source</h3>
+
+                            <ul>
+                                <li><a href="https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#330-7-march-2014" target="_blank">https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#330-7-march-2014</a>
+                                </li>
+                                <li><a href="https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#source-maps" target="_blank">https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#source-maps</a>
+                                </li>
+                                <li><a href="https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#at-root" target="_blank">https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#at-root</a>
+                                </li>
+                                <li><a href="http://www.phase2technology.com/blog/exploring-maps-in-sass-3-3/" target="_blank">http://www.phase2technology.com/blog/exploring-maps-in-sass-3-3/</a>
+                                </li>
+                            </ul>
+                            <p></p>
+                    </div>
+                    <div class="content" data-content="content-5">
+                        <h2>Release 3.4<span>August 2014</span></h2>
+                        <h3>Using & in SassScript</h3>
+                        <p> Until now, the <span class="highlight">parent selector &</span> has only been usable in selectors, but now it <span class="highlight">can be used in SassScript </span>as well.</p>
+                        <pre class="language-scss"> 
+<code class="language-scss">
+@mixin does-parent-exist {
+  @if & {
+    &:hover {
+      color: red;
+    }
+  } @else {
+    a {
+      color: red;
+    }
+  }
+}
+</code></pre>
+                        <h3>Selector Functions</h3>
+                        <p>Complementing the ability to use & in SassScript, there's a new <span class="highlight">suite of functions</span> that use Sass's powerful @extend infrastructure to allow users to manipulate selectors.</p>
+                        <p> This feature is specifically targeted to framework developers. </p>
+                        <ul class="mbl">
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#selector_append-instance_method" target="_blank">selector-append</a>
+                            </li>
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#selector_nest-instance_method" target="_blank">selector-nest</a>
+                            </li>
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#selector_extend-instance_method" target="_blank">selector-extend</a>
+                            </li>
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#selector_replace-instance_method" target="_blank">selector-replace</a>
+                            </li>
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#selector_unify-instance_method" target="_blank">selector-unify</a>
+                            </li>
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#selector_parse-instance_method" target="_blank">selector-parse</a>
+                            </li>
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#is_superselector-instance_method" target="_blank">is-superselector</a>
+                            </li>
+                            <li><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#simple_selectors-instance_method" target="_blank">simple-selectors</a>
+                            </li>
+                        </ul>
+                        <!--      <h4><span class="highlight"> selector-nest($selectors...) </span></h4>
+                        <p>Nests each selector within one another just like they would be nested in the stylesheet if you wrote them separated by spaces. For example, selector-nest(".foo, .bar", ".baz") returns .foo .baz, .bar .baz (well, technically (("foo" ".baz") (".bar" ".baz"))).</p>
+
+                        <h4><span class="highlight"> selector-append($selectors...)</span></h4>
+                        <p>Concatenates each selector without a space. It handles selectors with commas gracefully, so it's safer than just concatenating the selectors using #{}. For example, selector-append(".foo, .bar", "-suffix") returns .foo-suffix, .bar-suffix.</p>
+
+                        <h4><span class="highlight"> selector-extend($selector, $extendee, $extender)</span> </h4>
+                        <p>works just like @extend. It adds new selectors to $selector as though you'd written $extender { @extend $extendee; }.</p>
+
+                        <h4><span class="highlight"> selector-replace($selector, $original, $replacement) </span></h4>
+                        <p>Replaces all instances of $original in $selector with $replacement. It uses the same logic as @extend, so you can replace complex selectors with confidence.</p>
+
+                        <h4><span class="highlight"> selector-unify($selector1, $selector2)</span></h4>
+                        <p>Returns a selector that matches only elements matched by both $selector1 and $selector2.</p>
+
+                        <h4><span class="highlight"> is-superselector($super, $sub) </span></h4>
+                        <p>Returns whether or not $super matches a superset of the elements $sub matches</p>.
+
+                        <h4><span class="highlight"> simple-selectors($selector)</span></h4>
+                        <p>Takes only a selector with no commas or spaces (that is, a compound selector). It returns the list of simple selectors that make up that compound selector.</p>
+
+                        <h4><span class="highlight"> selector-parse($selector)</span></h4>
+                        <p>Takes a selector in any format accepted by selector functions and returns it in the same format returned by &. It's useful for getting a selector into a consistent format before manually manipulating its contents.</p>
+                        <p>One of the most straightforward applications of selector functions and & is <span class="highlight">adding multiple suffixes to the same parent selector</span>. For example:</p> -->
+
+                        <pre class="language-scss"> 
+<code class="language-scss">
+.list {
+  @at-root #{selector-append(&, "--big", &, "--active")} {
+    color: red;
+  }
+}
+</code></pre>
+                        <hr>
+                        <a href="http://sass-compatibility.github.io/" target="_blank">http://sass-compatibility.github.io/</a>
+                        <iframe src="http://sass-compatibility.github.io/" frameborder="0"></iframe>
+                        <h3>Source</h3>
+                        <ul>
+                            <li><a href="http://www.phase2technology.com/blog/everything-you-need-to-know-about-sass-3-4/" target="_blank">http://www.phase2technology.com/blog/everything-you-need-to-know-about-sass-3-4/</a>
+                            </li>
+                            <li><a href="https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#using--in-sassscript" target="_blank">https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#using--in-sassscript</a>
+                            </li>
+                            <li><a href="https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#selector-functions" target="_blank">https://github.com/sass/sass/blob/master/doc-src/SASS_CHANGELOG.md#selector-functions</a>
+                            </li>
+                            <li><a href="http://www.sitepoint.com/sass-3-4-is-out/" target="_blank">http://www.sitepoint.com/sass-3-4-is-out/</a>
+                            </li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="content" data-content="content-6">
+                        <h2>Postprocessing <span>Changing paradigms </span></h2>
+                        <p>New tools make us <span class="highlight">change the way we work</span>
+                        </p>
+                        <h3>Gulp</h3>
+                        <p><a href="http://gulpjs.com/" target="_blank">http://gulpjs.com/</a>
+                        </p>
+                        <!--    <h3>Grunt </h3>  
+                        <p><a href="http://gruntjs.com/" target="_blank">http://gruntjs.com/</a></p> -->
+
+                        <h3>CSS Autoprefixer</h3>
+                        <a class="mvl" href="https://www.npmjs.com/package/gulp-autoprefixer" target="_blank">https://www.npmjs.com/package/gulp-autoprefixer</a>
+                        <pre class="language-scss"> 
+<code class="language-javascript"> 
+var gulp = require('gulp');
+var autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('default', function () {
+    return gulp.src('src/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'));
+});
+</code></pre>
+
+                        <h3>UnCSS</h3>
+
+                        <a href="https://www.npmjs.com/package/gulp-uncss" target="_blank" class="mvl">https://www.npmjs.com/package/gulp-uncss</a>
+                        <pre class="language-scss"> 
+<code class="language-javascript"> 
+var gulp = require('gulp');
+var uncss = require('gulp-uncss');
+
+gulp.task('simple', function() {
+    return gulp.src('site.css')
+        .pipe(uncss({
+            html: ['index.html', 'about.html']
+        }))
+        .pipe(gulp.dest('./out'));
+});
+</code></pre>
+
+                        <h2>
+    <a href="http://markgoodyear.com/2014/01/getting-started-with-gulp/" target="_blank">Good pipes to start</a>
+</h2>
+                        <h3>Source</h3>
+                        <ul>
+                            <li><a href="http://css-tricks.com/autoprefixer/" target="_blank">http://css-tricks.com/autoprefixer/</a>
+                            </li>
+                        </ul>
+                        <p></p>
+
+
+                    </div>
+                    <div class="content" data-content="content-7">
+                        <h2>Sass ecosystem  <span>The strenght of the community</span></h2>
+                        <h3>Compass</h3>
+                        <p><a href="http://compass-style.org/" target="_blank">http://compass-style.org/</a>
+                        </p>
+                        <h3>Libsass</h3>
+                        <p>LibSass is just a C/C++ library of the Sass engine.</p>
+                        <p><a href="http://libsass.org/" target="_blank">http://libsass.org/</a>
+                        </p>
+                        <h3>Sass meister</h3>
+                        <p><a href="http://sassmeister.com/" target="_blank">http://sassmeister.com/</a>
+                        </p>
+                        <h3>SassConf</h3>
+                        <p><a href="http://sassconf.com/" target="_blank">http://sassconf.com/</a>
+                        </p>
+                       
+                        <h3>SassBites</h3>
+                        <p><a href="https://www.youtube.com/user/sassbites" target="_blank">https://www.youtube.com/user/sassbites</a></p>
+
+                        <h3>The Sass Bible</h3>
+                        <p>
+                            <a href="https://github.com/HugoGiraudel/awesome-sass">https://github.com/HugoGiraudel/awesome-sass</a>
+                        </p>
+                         <h3>SassGirls</h3>
+                        <p><a href="http://sassgirls.me/" target="_blank">http://sassgirls.me/</a>
+                        </p>
+                        <p><img src="assets/twitter_chriseppstein.png" alt="">
+                        </p>
+
+
+
+                        <p class="related">
+
+                        </p>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <!-- /container -->
+        <script src="js/main.min.js"></script>
+        <script>
+        (function() {
+
+            var overlay = document.getElementById('overlay'),
+                overlayClose = overlay.querySelector('button'),
+                header = document.getElementById('header')
+            switchBtnn = header.querySelector('button.slider-switch'),
+                toggleBtnn = function() {
+                    if (slideshow.isFullscreen) {
+                        classie.add(switchBtnn, 'view-maxi');
+                    } else {
+                        classie.remove(switchBtnn, 'view-maxi');
+                    }
+                },
+                toggleCtrls = function() {
+                    if (!slideshow.isContent) {
+                        classie.add(header, 'hide');
+                    }
+                },
+                toggleCompleteCtrls = function() {
+                    if (!slideshow.isContent) {
+                        classie.remove(header, 'hide');
+                    }
+                },
+                slideshow = new DragSlideshow(document.getElementById('slideshow'), {
+                    // toggle between fullscreen and minimized slideshow
+                    onToggle: toggleBtnn,
+                    // toggle the main image and the content view
+                    onToggleContent: toggleCtrls,
+                    // toggle the main image and the content view (triggered after the animation ends)
+                    onToggleContentComplete: toggleCompleteCtrls
+                }),
+                toggleSlideshow = function() {
+                    slideshow.toggle();
+                    toggleBtnn();
+                },
+                closeOverlay = function() {
+                    classie.add(overlay, 'hide');
+                };
+
+            // toggle between fullscreen and small slideshow
+            switchBtnn.addEventListener('click', toggleSlideshow);
+            // close overlay
+            overlayClose.addEventListener('click', closeOverlay);
+
+        }());
+        </script>
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32740256-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+        </script>
+
+    </body>
 
 </html>

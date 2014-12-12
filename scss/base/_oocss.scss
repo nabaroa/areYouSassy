@@ -20,15 +20,19 @@ ul.width200 li {
 }
 
 .txtac {
-  text-align: center;
+  text-align: center !important;
 }
 
 .tac {
-  text-align: center;
+  text-align: center !important;
 }
 
 .txtar {
   text-align: right;
+}
+
+.circle {
+  border-radius: 500rem;
 }
 
 .fll,

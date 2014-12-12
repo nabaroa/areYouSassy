@@ -17,6 +17,10 @@ a {
 //  //Colors
 //--------------------------------//
 
+.color {
+  color: $color;
+}
+
 .bare {
   color: #bbb;
 }
@@ -246,41 +250,41 @@ a.negative, .negative a {
   padding-bottom: 10px;
 }
 
-.coming_soon {
-  background: url(../assets/comming-soon.png) 0 0 no-repeat;
-  position: absolute;
-  right: -100px;
-  bottom: -100px;
-  width: 271px;
-  height: 130px;
-}
+// .coming_soon {
+//   background: url(../assets/comming-soon.png) 0 0 no-repeat;
+//   position: absolute;
+//   right: -100px;
+//   bottom: -100px;
+//   width: 271px;
+//   height: 130px;
+// }
 
-.cooking {
-  background: url(../assets/cooking.png) 0 0 no-repeat;
-  width: 103px;
-  height: 92px;
-  position: absolute;
-  top: -100px;
-  left: 130px;
-}
+// .cooking {
+//   background: url(../assets/cooking.png) 0 0 no-repeat;
+//   width: 103px;
+//   height: 92px;
+//   position: absolute;
+//   top: -100px;
+//   left: 130px;
+// }
 
-.notfinished {
-  font-family: "Mr Dafoe";
-  float: right;
-  right: 20px;
-  color: #666;
-  position: absolute;
-  bottom: 50px;
-  font-size: 4em;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-  @media all and (max-width: 1000px) {
-    display: none;
-  }
-}
+// .notfinished {
+//   font-family: "Mr Dafoe";
+//   float: right;
+//   right: 20px;
+//   color: #666;
+//   position: absolute;
+//   bottom: 50px;
+//   font-size: 4em;
+//   -webkit-transform: rotate(20deg);
+//   -moz-transform: rotate(20deg);
+//   -ms-transform: rotate(20deg);
+//   -o-transform: rotate(20deg);
+//   transform: rotate(20deg);
+//   @media all and (max-width: 1000px) {
+//     display: none;
+//   }
+// }
 
 .tshadow {
   text-shadow: 0 1px 0 black, 0 -1px 0 white;
@@ -298,127 +302,190 @@ ul.boxshadow2 li {
   box-shadow: 3px 3px 5px #000;
 }
 
-.bio_bg {
-  background: url(../assets/bio_bg.jpg) bottom right no-repeat;
-}
+// .bio_bg { 
+//   background: url(../assets/bio_bg.jpg) bottom right no-repeat;
+// }
 
-.top_n {
-  width: 53px;
-  height: 80px;
-  margin: auto;
-  background: url(../assets/top_deco_n.png) no-repeat;
-}
+// .top_n {
+//   width: 53px;
+//   height: 80px;
+//   margin: auto;
+//   background: url(../assets/top_deco_n.png) no-repeat;
+// }
 
-.top_a {
-  width: 53px;
-  height: 80px;
-  margin: auto;
-  background: url(../assets/top_deco_a.png) no-repeat;
-}
+// .top_a {
+//   width: 53px;
+//   height: 80px;
+//   margin: auto;
+//   background: url(../assets/top_deco_a.png) no-repeat;
+// }
 
-.top_k {
-  width: 53px;
-  height: 80px;
-  position: absolute;
-  left: calc(50% - 26px);
-  margin: auto;
-  background: url(../assets/top_deco_k.png) no-repeat;
-}
+// .top_k {
+//   width: 53px;
+//   height: 80px;
+//   position: absolute;
+//   left: calc(50% - 26px);
+//   margin: auto;
+//   background: url(../assets/top_deco_k.png) no-repeat;
+// }
 
-.top_nak {
-  width: 47px;
-  height: 195px;
-  margin: auto;
-  background: url(../assets/nak.png) no-repeat;
-  @media all and (max-width: 1000px) {
-    display: none;
-  }
-}
+// .top_nak {
+//   width: 47px;
+//   height: 195px;
+//   margin: auto;
+//   background: url(../assets/nak.png) no-repeat;
+//   @media all and (max-width: 1000px) {
+//     display: none;
+//   }
+// }
 
-.ank {
-  margin: 0;
-}
+// .ank {
+//   margin: 0;
+// }
 
-h1.logo {
-  width: 47px;
-  height: 196px;
-  margin: auto;
-  position: relative;
-  span {
+// h1.logo {
+//   width: 47px;
+//   height: 196px;
+//   margin: auto;
+//   position: relative;
+//   span {
+//     position: absolute;
+//     text-indent: -9999px;
+//   }
+//   em {
+//     background: url(../assets/naknak.png) no-repeat top center;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+
+// .csswinner {
+//   position: fixed;
+//   top: 400px;
+//   right: 0;
+//   z-index: 10;
+//   a {
+//     width: 81px;
+//     height: 59px;
+//     text-indent: -9000px;
+//     display: block;
+//     background: url(../assets/nominee-white-right.png) no-repeat;
+//   }
+// }
+
+// .pattern2 {
+//   background: url(../assets/pattern2.png);
+// }
+
+// .pattern3 {
+//   background: url(../assets/bg5.png);
+// }
+
+// .size1of6 {
+//   a:hover {
+//     text-decoration: none;
+//   }
+// }
+
+// .findme {
+//   a {
+//     &:hover {
+//       i {
+//         color: #f4b408;
+//       }
+//     }
+//   }
+// }
+
+// .cv {
+//   a:hover {
+//     color: $darker;
+//   }
+// }
+
+// .nabaroa {
+//   background: url(https://avatars3.githubusercontent.com/u/1814752?v=3&s=460) 0 0 no-repeat;
+//   width: 200px;
+//   height: 200px;
+//   border-radius: 500rem;
+//   margin: 1rem auto;
+//   background-size: cover;
+// }
+
+// .icon-lea {
+//   width: 200px;
+//   height: 200px;
+//   margin: 1rem auto 2rem auto;
+//   text-align: center;
+//   >span {
+//     display: block;
+//   }
+// }
+.img-wrap {
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  &:before {
+    content: "";
     position: absolute;
-    text-indent: -9999px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/alpha.png) no-repeat;
+    background-size: 100% 100%;
   }
-  em {
-    background: url(../assets/naknak.png) no-repeat top center;
+  &:after {
+    background: url(../assets/pattern2.png) 0 0;
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
   }
 }
 
-.csswinner {
-  position: fixed;
-  top: 400px;
-  right: 0;
-  z-index: 10;
-  a {
-    width: 81px;
-    height: 59px;
-    text-indent: -9000px;
-    display: block;
-    background: url(../assets/nominee-white-right.png) no-repeat;
-  }
-}
+.slide {}
 
-.pattern2 {
-  background: url(../assets/pattern2.png);
-}
-
-.pattern3 {
-  background: url(../assets/bg5.png);
-}
-
-.size1of6 {
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-.findme {
-  a {
-    &:hover {
-      i {
-        color: #f4b408;
-      }
-    }
-  }
-}
-
-.cv {
-  a:hover {
-    color: $darker;
-  }
-}
-
-.nabaroa {
-  background: url(https://avatars3.githubusercontent.com/u/1814752?v=3&s=460) 0 0 no-repeat;
-  width: 200px;
-  height: 200px;
-  border-radius: 500rem;
-  margin: 1rem auto;
+.slide1 {
+  background: url(http://explikator.de/wp-content/uploads/2014/04/pippi-langstrumpf-3851200.jpg) 0 0px no-repeat;
   background-size: cover;
 }
 
-.icon-lea {
-  width: 200px;
-  height: 200px;
-  margin: 1rem auto 2rem auto;
-  text-align: center;
-  >span {
-    display: block;
-  }
+.slide2 {
+  background: url(http://media-cache-ak0.pinimg.com/736x/28/c3/6e/28c36efdad34e611052bce0744c8d79b.jpg) 0 -250px no-repeat;
+  background-size: cover;
+}
+
+.slide3 {
+  background: url(http://media-cache-ak0.pinimg.com/736x/bc/44/1c/bc441c8f971bae28a95dc42a792d7519.jpg) 0 -250px no-repeat;
+  background-size: cover;
+}
+
+.slide4 {
+  background: url(http://images04.kurier.at/46-22505325.jpg/88.304.420) 0 0px no-repeat;
+  background-size: cover;
+}
+
+.slide5 {
+  background: url(http://www.spiel-ideen.ch/spielzeug-online-shop/public/images_1000px/09329_3-ravensburger.jpg) 0 -300px no-repeat;
+  // background: url(http://media-cache-ak0.pinimg.com/736x/60/3a/b0/603ab01310bd3cbfe0fab5516d24449c.jpg) 0 -300px no-repeat;
+  background-size: cover;
+}
+
+.slide6 {
+  background: url(http://data2.puzzle.de/cache/1/image/2/8/28.247_02.jpg) 0 0px no-repeat;
+  background-size: cover;
+}
+
+.slide7 {
+  background: url(http://2.bp.blogspot.com/-J81drI2FO9I/U9F92X3PQaI/AAAAAAAAOXA/CZ88h6hy9-0/s1600/.21+Pippi+Langstrumpf.jpg) 0 0px no-repeat;
+  background-size: cover;
 }
 
 //
