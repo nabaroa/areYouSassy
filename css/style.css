@@ -1321,6 +1321,28 @@ ul.boxshadow2 li {
   background-size: cover;
 }
 
+.csswinner {
+  position: fixed;
+  top: 400px;
+  right: 0;
+  z-index: 999;
+}
+.csswinner a {
+  width: 67px;
+  height: 101px;
+  text-indent: -9000px;
+  display: block;
+  background: url(../assets/nominee-new-black-right.png) no-repeat;
+}
+
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 999;
+}
+
 .icon-lea:before {
   font-size: 12rem;
   color: #666;
@@ -1990,8 +2012,8 @@ a:hover, a:focus {
 .codrops-header {
   margin: 0 auto;
   width: 70%;
-  right: 2rem;
-  top: 2rem;
+  right: 5rem;
+  top: 5rem;
   pointer-events: none;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
